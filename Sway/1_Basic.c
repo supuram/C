@@ -1,0 +1,32 @@
+/**
+Sway is a tiling Wayland compositor and a drop-in replacement for the i3 window manager for X11. It works with your existing i3 configuration and supports most of i3's features, plus a few extras.
+
+*! What is a tiling Wayland compositor ?
+*? A tiling Wayland compositor is a type of window manager that organizes application windows in a non-overlapping manner, usually in a grid-like pattern. It is designed to work with the Wayland display server protocol, which is intended to be a more modern replacement for the X Window System. Some examples of tiling Wayland compositors include **Sway**, **River**, and **Hyprland**. These compositors allow for flexible runtime configuration and efficient use of screen space, and can be controlled using only the keyboard. They are popular among users who prefer a more streamlined and organized desktop environment.
+
+*! What is a window manager ? (Line 5)
+*? A window manager is a system software that controls the placement and appearance of windows within a windowing system in a graphical user interface. It can be part of a desktop environment or be used standalone. The window manager is responsible for managing the arrangement of application windows on the screen, allowing users to move, resize, minimize, and maximize windows. Some window managers also provide additional features such as virtual desktops, window snapping, and keyboard shortcuts for window management. 
+
+*! What is a windowing system ? (Line 8)
+*? A windowing system, also referred to as a window system, is a software suite that manages separately different parts of display screens. It is a type of graphical user interface (GUI) which implements the WIMP (windows, icons, menus, pointer) paradigm for a user interface¹. A windowing system enables the computer user to work with several programs at the same time. Each program presents its GUI in its own window, which is generally a rectangular area of the screen. 
+
+*! What is application windows ? (Line 8)
+*? An application window is a graphical user interface (GUI) element that displays the content of an application on the screen1. It is a rectangular area on the screen that contains the application’s user interface, including menus, buttons, text fields, and other controls. Application windows can be moved, resized, minimized, maximized, and closed by the user. They are managed by the window manager, which is responsible for arranging them on the screen and handling user interactions with them.
+
+*! What is Wayland display server protocol ? (Line 5)
+*? Wayland is a communication protocol that specifies the communication between a display server and its clients, as well as a C library implementation of that protocol. A display server using the Wayland protocol is called a Wayland compositor, because it additionally performs the task of a compositing window manager. Wayland is developed by a group of volunteers initially led by Kristian Høgsberg as a free and open-source community-driven project with the aim of replacing the X Window System with a modern, secure, and simpler windowing system for Linux and other Unix-like operating systems.
+
+*! What is a display server ? (Line 17)
+*? A display server is a program that is responsible for the input and output coordination of its clients, to and from the rest of the operating system, and among the hardware and the operating system. It provides the framework for a graphical environment so that you can use a mouse and keyboard to interact with applications. The display server communicates with its clients over the display server protocol, like X11. It is a key component in any graphical user interface, specifically the windowing system. Without a display server, you would only be restricted to a command-line interface (TTY).
+
+*! Where do i find this C library implementation of the Wayland display server protocol  ? What is the nature of this C library implementation ? (Line 17)
+*? The C library implementation of the Wayland display server protocol is called `libwayland`. It is an inter-process communication library that translates a protocol definition in XML to a C language API. This library does not implement Wayland, it merely encodes and decodes Wayland messages³. The actual implementations are in the various compositor and application toolkit projects. You can find more information about `libwayland` and download it from the Wayland project website. 
+
+*! What is a compositing window manager ? (Line 17)
+*? A compositing window manager, or compositor, is a window manager that provides applications with an off-screen buffer for each window. The compositing manager composites the window buffers into an image representing the screen and writes the result into the display memory. Compositing managers may perform additional processing on buffered windows, applying 2D and 3D animated effects such as blending, fading, scaling, rotation, duplication, bending and contortion, shuffling, blurring, redirecting applications, and translating windows into one of a number of displays and virtual desktops.
+
+*! What is X Window System ? (Line 5)
+*? The X Window System, also known as X11 or simply X, is a windowing system for bitmap displays, common on Unix-like operating systems. It provides the basic framework for a graphical user interface (GUI) environment, including drawing and moving windows on the display device and interacting with a mouse and keyboard¹. X does not mandate the user interface, this is handled by individual programs. The X Window System was developed as part of Project Athena at the Massachusetts Institute of Technology (MIT) in 1984. The current reference implementation of the X Window System is the X.Org Server, which is available as free and open-source software under the MIT License and similar permissive licenses. 
+*! That means when you download linux in your system, the X window system is used for GUI ?
+*? Yes, the X Window System is commonly used as the default windowing system for GUI environments in most Linux distributions. It provides the basic framework for a graphical user interface, including drawing and moving windows on the display device and interacting with a mouse and keyboard. However, it is important to note that X does not mandate the user interface – this is handled by individual programs.
+*/
