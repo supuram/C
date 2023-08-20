@@ -13,5 +13,7 @@ int main() {
     printf("Address of %d is %p\n", p1.y, &p1.y);
     printf("Address of %d is %p\n", *ptr, ptr);
     printf("Address of %d is %p\n", ptr->x, &ptr->x);
+    printf("Address of %d is %p\n", p1, &p1);
+    printf("Size = %lu", sizeof(struct Point));
     return 0;
 }
