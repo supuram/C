@@ -15,7 +15,7 @@ int main() {
 
     ptr+=2;
     printf("\n");
-    printf("Value at ptr: %d\n", *ptr);  // Output: 20
+    printf("Value at ptr: %d\n", *ptr);  
     printf("Memory address of %d = %p, %llu\n", *ptr, ptr, (unsigned long long)ptr);
     printf("Memory address of %d = %p\n", *ptr, (void *)ptr);
     printf("Memory address of %p = %p\n", ptr, (void *)&ptr);
